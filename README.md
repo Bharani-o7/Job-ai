@@ -48,7 +48,6 @@ Missing Keywords:
 - cloud infrastructure
 - backend
 
-==================================================
 JOBFORGE AI - REQUIREMENTS.TXT
 ==================================================
 
@@ -68,7 +67,6 @@ beautifulsoup4
 lxml
 
 
-==================================================
 SETUP & RUN - WINDOWS POWERSHELL
 ==================================================
 
@@ -126,7 +124,6 @@ Get-Item .\resumes\master_resume.pdf
 python main.py
 
 
-==================================================
 OPTIONAL - START FASTAPI BACKEND
 ==================================================
 
@@ -154,7 +151,7 @@ API documentation:
 http://127.0.0.1:8000/docs
 
 
-==================================================
+
 OPTIONAL - START REACT FRONTEND
 ==================================================
 
@@ -173,7 +170,6 @@ Start the frontend:
 npm run dev
 
 
-==================================================
 NORMAL DAILY USAGE
 ==================================================
 
@@ -186,7 +182,6 @@ cd "C:\Users\bhara\OneDrive\Desktop\jobforge-ai"
 python main.py
 
 
-==================================================
 IMPORTANT
 ==================================================
 
@@ -217,7 +212,6 @@ JobForge AI will then use the updated resume the next time you run:
 python main.py
 
 
-==================================================
 TROUBLESHOOTING
 ==================================================
 
