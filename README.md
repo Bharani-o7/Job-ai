@@ -49,28 +49,47 @@ Missing Keywords:
 - backend
 
 🏗️System Architecture
-                         JobForge AI
-                              │
-        ┌─────────────────────┼─────────────────────┐
-        │                     │                     │
-        ▼                     ▼                     ▼
-    Scrapers               ATS Engine           Application
-        │                     │                     │
-        │                     │                     │
-   ┌────┼────┐          ┌─────┼─────┐        ┌──────┼──────┐
-   │    │    │          │     │     │        │      │      │
-  LI  Indeed Glassdoor Parser Scorer Optimizer  LI  GH  WD
-   │    │    │                                  │      │
-   └────┼────┘                                  │      │
-        │                                       │      │
-        ▼                                       ▼      ▼
-    Job Data                              Browser Automation
-        │                                       │
-        └───────────────────┬───────────────────┘
-                            │
-                            ▼
-                     Application Tracking
-
+==========================
+                  ┌─────────────────────┐
+                  │     JobForge AI     │
+                  └──────────┬──────────┘
+                             │
+              ┌──────────────┴──────────────┐
+              │                             │
+       Job Discovery                 Resume Analysis
+              │                             │
+      ┌───────┼────────┐             ┌──────┴──────┐
+      │       │        │             │             │
+ LinkedIn  Indeed  Glassdoor      PDF Parser   ATS Scorer
+      │       │        │             │             │
+      └───────┴────────┘             └──────┬──────┘
+                  │                         │
+                  ▼                         ▼
+             Job Data                Missing Keywords
+                                             │
+                                             ▼
+                                     Resume Optimization
+                                             │
+                                             ▼
+                                       Job Ranking
+                                             │
+                                             ▼
+                                   Best Job Selection
+                                             │
+                                             ▼
+                                    Platform Detection
+                                             │
+                 ┌───────────────────────────┼───────────────────────┐
+                 │                           │                       │
+             LinkedIn                  Greenhouse               Workday
+                 │                           │                       │
+                 └───────────────────────────┼───────────────────────┘
+                                             │
+                                             ▼
+                                      Application Flow
+                                             │
+                                             ▼
+                                     Application Tracking
 
 ==================================================
 JOBFORGE AI - REQUIREMENTS.TXT
